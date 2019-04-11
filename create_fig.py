@@ -19,7 +19,7 @@ def drawHW1(result):
     plt.title('Total')
     plt.legend(loc='lower left')
     plt.grid()
-    plt.savefig('1.png')
+    plt.savefig('HW1_1.png')
     plt.show()
 
     fig = plt.figure(figsize = (15,5))
@@ -31,7 +31,7 @@ def drawHW1(result):
     plt.title('Total')
     plt.legend(loc='lower left')
     plt.grid()
-    plt.savefig('2.png')
+    plt.savefig('HW1_2.png')
     plt.show()
 
 
@@ -43,11 +43,11 @@ def drawHW1(result):
     plt.plot(year,1-man_ratio,'o-',label = 'woman')
     plt.xticks(year.astype('int').tolist())
     plt.xlabel('Year')
-    plt.ylabel('Population/*10^4')
+    plt.ylabel('Population proportion')
     plt.title('Man vs Woman')
     plt.legend()
     plt.grid()
-    plt.savefig('3.png')
+    plt.savefig('HW1_3.png')
     plt.show()
 
 
@@ -56,11 +56,11 @@ def drawHW1(result):
     plt.plot(year,1-city_ratio,'o-',label = 'countryside')
     plt.xticks(year.astype('int').tolist())
     plt.xlabel('Year')
-    plt.ylabel('Population/*10^4')
+    plt.ylabel('Population proportion')
     plt.title('City vs Countryside')
     plt.legend()
     plt.grid()
-    plt.savefig('4.png')
+    plt.savefig('HW1_4.png')
     plt.show()
 
 
@@ -84,7 +84,7 @@ def drawHW2(d,result):
     plt.title('Population change ratio')
     plt.legend()
     plt.grid()
-    plt.savefig('ratio.png')
+    plt.savefig('HW2_ratio.png')
     plt.show()
 
     c1998 = 100
@@ -99,7 +99,7 @@ def drawHW2(d,result):
     plt.title('Population (assume 1998 is 100)')
     plt.legend(loc='lower left')
     plt.grid()
-    plt.savefig('popu.png')
+    plt.savefig('HW2_popu.png')
     plt.show()
 
 
