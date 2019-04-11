@@ -80,7 +80,7 @@ def drawHW2(d,result):
     plt.plot(locals()['year'],locals()['increase'],'*-',label = 'Increase')
     plt.xticks(locals()['year'].astype('int').tolist())
     plt.xlabel('Year')
-    plt.ylabel('Ratio/%')
+    plt.ylabel('Ratio/0.001')
     plt.title('Population change ratio')
     plt.legend()
     plt.grid()
@@ -88,7 +88,7 @@ def drawHW2(d,result):
     plt.show()
 
     c1998 = 100
-    popu = (1+locals()['increase']/100)
+    popu = (1+locals()['increase']/1000)
     inc = np.multiply.accumulate(popu[::-1])[::-1]
     popu = c1998*inc
     fig = plt.figure(figsize = (15,5))
